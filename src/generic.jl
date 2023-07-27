@@ -31,9 +31,9 @@ end
 
 struct Result
     options::Options
-    t::Array{Int8,1}
-    N::Array{Int16,2}
-    z::Array{Int8,2}
+    t::Array{Int64,1}
+    N::Array{Int64,2}
+    z::Array{Int64,2}
     theta::Array{Theta,2}
     keepers::Array{Int64,1}
     elapsed_time::Float64
