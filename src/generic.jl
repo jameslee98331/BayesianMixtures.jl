@@ -8,7 +8,7 @@ struct Options
     n_burn::Int64
     verbose::Bool
     use_hyperprior::Bool
-    t_max::Int64 
+    t_max::Int64
     # MFM options
     gamma::Float64
     log_pk::String
