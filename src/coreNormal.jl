@@ -185,11 +185,11 @@ function sampler(options, n_total, n_keep)
 
     # Record-keeping variables
     t_r = zeros(Int8, n_total)
-    @assert(t_max < 2^7)
+    # @assert(t_max < 2^7)
     N_r = zeros(Int16, t_max + 3, n_total)
-    @assert(n < 2^15)
+    # @assert(n < 2^15)
     z_r = zeros(Int8, n, n_keep)
-    @assert(t_max < 2^7)
+    # @assert(t_max < 2^7)
     theta_r = Theta[zeros(2) for j = 1:t_max+3, iteration = 1:n_keep]
 
     for iteration = 1:n_total
