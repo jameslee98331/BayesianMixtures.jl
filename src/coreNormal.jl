@@ -184,11 +184,11 @@ function sampler(options, n_total, n_keep)
     log_Nb = log.((1:n) .+ b)
 
     # Record-keeping variables
-    t_r = zeros(Int8, n_total)
+    t_r = zeros(Int32, n_total)
     # @assert(t_max < 2^7)
-    N_r = zeros(Int16, t_max + 3, n_total)
+    N_r = zeros(Int32, t_max + 3, n_total)
     # @assert(n < 2^15)
-    z_r = zeros(Int8, n, n_keep)
+    z_r = zeros(Int32, n, n_keep)
     # @assert(t_max < 2^7)
     theta_r = Theta[zeros(2) for j = 1:t_max+3, iteration = 1:n_keep]
 
